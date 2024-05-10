@@ -31,6 +31,7 @@ def procesar_imagen(image_path):
         mask = cv2.inRange(hsv, lower, upper)
         if np.sum(mask) > 0:  # Si hay píxeles del color presente
             total_desplazamiento += desplazamientos[color]
+            print(f"Detectado color {color} con desplazamiento de {desplazamientos[color]}")
 
     return total_desplazamiento
 
