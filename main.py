@@ -1,5 +1,5 @@
 import gradio as gr
-from legocrypto import cifrar, descifrar
+from lego_crypto import cifrar, descifrar
 
 def main():
     # Interfaz Gradio para cifrar
