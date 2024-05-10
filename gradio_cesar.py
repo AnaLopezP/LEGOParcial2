@@ -2,6 +2,10 @@ import cv2
 import numpy as np
 import gradio as gr
 
+'''
+Esto detecta colores de las imagenes y determina el despazamiento asociado a cada color
+'''
+
 # Definir los rangos de colores en HSV para identificar colores específicos de LEGO
 color_ranges = {
     'rojo': ([0, 120, 70], [10, 255, 255]),
