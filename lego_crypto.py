@@ -5,13 +5,25 @@ import gradio as gr
 # Definir los rangos de colores en HSV para identificar colores específicos de LEGO
 color_ranges = {
     'rojo': ([0, 120, 70], [10, 255, 255]),
-    'azul': ([100, 150, 0], [140, 255, 255])
+    'azul': ([100, 150, 0], [140, 255, 255]),
+    'amarillo': ([20, 100, 100], [30, 255, 255]),
+    'verde': ([40, 50, 50], [80, 255, 255]),
+    'naranja': ([10, 100, 100], [20, 255, 255]),
+    'blanco': ([0, 0, 200], [180, 25, 255]),
+    'morado': ([125, 100, 0], [150, 255, 255]),
+    'rosa': ([160, 100, 100], [170, 255, 255])
 }
 
 # Valores de desplazamiento asociados a cada color
 desplazamientos = {
-    'rojo': 3,
-    'azul': 5
+    'rojo': 4,
+    'azul': 9,
+    'amarillo': 7,
+    'verde': 11,
+    'naranja': 13,
+    'blanco': 17,
+    'morado': 19,
+    'rosa': 23
 }
 
 def procesar_imagen(image_path):
