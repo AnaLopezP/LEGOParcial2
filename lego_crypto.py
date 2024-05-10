@@ -10,8 +10,14 @@ color_ranges = {
 
 # Valores de desplazamiento asociados a cada color
 desplazamientos = {
-    'rojo': 3,
-    'azul': 5
+    'rojo': 4,
+    'azul': 9,
+    'amarillo': 7,
+    'verde': 11,
+    'naranja': 13,
+    'blanco': 17,
+    'morado': 19,
+    'rosa': 23
 }
 
 def procesar_imagen(image_path):
