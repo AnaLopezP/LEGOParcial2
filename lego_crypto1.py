@@ -1,6 +1,10 @@
 import cv2
 import numpy as np
 import gradio as gr
+'''
+Según los colores de la imagen desplaza las letras del mensaje. 
+Ejemplo: Si solo ponemos el azul y la palabra baca pues cambia a Gaca. Si le añadimos más colores, nos cambia más letras.
+'''
 
 # Definir rangos de colores en HSV para identificar colores específicos de LEGO
 color_ranges = {
@@ -13,11 +17,11 @@ color_ranges = {
 
 # Mapeo de colores a números de cifrado de César y letras
 colores_info = {
-    'rojo': {'letra': 'A', 'cesar': 3},
-    'azul': {'letra': 'B', 'cesar': 5},
-    'verde': {'letra': 'C', 'cesar': 2},
-    'amarillo': {'letra': 'D', 'cesar': 4},
-    'naranja': {'letra': 'E', 'cesar': 7}
+    'rojo': {'letra': 'a', 'cesar': 3},
+    'azul': {'letra': 'b', 'cesar': 5},
+    'verde': {'letra': 'c', 'cesar': 2},
+    'amarillo': {'letra': 'd', 'cesar': 4},
+    'naranja': {'letra': 'e', 'cesar': 7}
 }
 
 def procesar_imagen(image_path):
