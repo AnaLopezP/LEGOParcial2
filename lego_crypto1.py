@@ -17,11 +17,11 @@ color_ranges = {
 
 # Mapeo de colores a números de cifrado de César y letras
 colores_info = {
-    'rojo': {'letra': 'a', 'cesar': 3},
-    'azul': {'letra': 'b', 'cesar': 5},
-    'verde': {'letra': 'c', 'cesar': 2},
-    'amarillo': {'letra': 'd', 'cesar': 4},
-    'naranja': {'letra': 'e', 'cesar': 7}
+    'rojo': {'letra': 'A', 'cesar': 3},
+    'azul': {'letra': 'B', 'cesar': 5},
+    'verde': {'letra': 'C', 'cesar': 2},
+    'amarillo': {'letra': 'D', 'cesar': 4},
+    'naranja': {'letra': 'E', 'cesar': 7}
 }
 
 def procesar_imagen(image_path):
